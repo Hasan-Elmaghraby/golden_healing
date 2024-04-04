@@ -1,0 +1,53 @@
+.popup_service {
+  padding: 55px 80px;
+  position: fixed;
+  background-color: #fff;
+  min-width: 400px;
+  text-align: center;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+
+  @include xxs {
+    padding: 25px 20px;
+    min-width: 250px;
+  }
+
+  .title {
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 6px;
+  }
+  .subtitle {
+    color: $paragraphMainColor;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .pay_button {
+    background-color: $secondaryColor;
+    height: 65px;
+    width: 100%;
+    border-radius: 10px;
+    color: $thirdColor;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 27px;
+    margin-bottom: 19px;
+
+    &:hover {
+      background-color: rgba($secondaryColor, 0.9);
+    }
+  }
+
+  .close_button {
+    color: $paragraphMainColor;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 auto;
+  }
+}

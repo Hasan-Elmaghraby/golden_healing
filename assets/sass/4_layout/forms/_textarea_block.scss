@@ -1,0 +1,21 @@
+.textarea-om {
+  height: 153px;
+  resize: none;
+  width: 100%;
+  border-radius: 10px;
+
+  &:focus {
+    outline: 0;
+  }
+  &.margin_bottom_ {
+    margin-bottom: 30px;
+
+    @include xxs {
+      margin-bottom: 10px;
+    }
+  }
+
+  &.modify_height {
+    height: 186px;
+  }
+}

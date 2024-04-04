@@ -1,0 +1,153 @@
+.qustions_desc {
+  width: 70%;
+
+  @include sm {
+    margin: 0 auto;
+  }
+
+  @include xxs {
+    width: 80%;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 15px;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $paragraphMainColor;
+    margin-bottom: 15px;
+    line-height: 33px;
+    margin-bottom: 40px;
+  }
+}
+
+.numbers_wrapper {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+
+  .link__ {
+    @include circle(60px);
+    min-width: 60px;
+    background-color: rgba($primaryColor, 0.06);
+    flex-shrink: 0;
+    color: $paragraphMainColor;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    transition: 0.5s;
+
+    &:not(:first-child) {
+      &:before {
+        position: absolute;
+        content: "";
+        border: 1px dashed rgba(#000, 0.2);
+        top: 50%;
+        left: 100%;
+        width: 60px;
+        height: 2px;
+        z-index: -1;
+        transition: 0.5s;
+      }
+    }
+
+    &.active {
+      background-color: $secondaryColor;
+      color: #000;
+
+      &:not(:first-child) {
+        &:before {
+          border-color: $secondaryColor;
+        }
+      }
+    }
+  }
+
+  @include sm {
+    gap: 30px;
+
+    .link__ {
+      @include circle(35px);
+      min-width: 35px;
+      font-size: 1.4rem;
+
+      &:not(:first-child) {
+        &:before {
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  @include xxs {
+    gap: 10px;
+
+    .link__ {
+      @include circle(15px);
+      min-width: 15px;
+      font-size: 1.2rem;
+
+      &:not(:first-child) {
+        &:before {
+          width: 10px;
+          height: 1px;
+        }
+      }
+    }
+  }
+}
+
+.location_desc {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  @include sm {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  @include xxs {
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  .title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+    padding-bottom: 15px;
+  }
+}
+
+.steps_options {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .button__ {
+    font-size: 1.6rem;
+    color: $thirdColor;
+    font-weight: 700;
+  }
+
+  .finish_button {
+    width: 190px;
+    background-color: rgba(#ff0000, 0.13);
+
+    &:hover {
+      background-color: rgba(#ff0000, 0.2);
+    }
+  }
+
+  .share_button {
+    width: 267px;
+    background-color: $secondaryColor;
+  }
+}
+
+.problem_share {
+  @include p-bottom(385, 520);
+}

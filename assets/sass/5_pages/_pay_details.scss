@@ -1,0 +1,44 @@
+.pay_details_info_wrapper {
+  .title {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+    color: $paragraphMainColor;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+}
+
+.pay_options {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  @include xxs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .block {
+    height: 65px;
+    padding: 22px;
+    border-radius: 10px;
+    background-color: rgba($primaryColor, 0.02);
+    display: flex;
+    flex: auto;
+
+    &:hover {
+      background-color: rgba($secondaryColor, 0.25);
+    }
+  }
+
+  .vissa_button {
+    background-color: rgba($secondaryColor, 0.13);
+  }
+}

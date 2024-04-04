@@ -1,0 +1,41 @@
+.comment_card {
+  background-color: rgba($primaryColor, 0.02);
+  padding: 20px;
+  border-radius: 10px;
+
+  .head_card {
+    display: flex;
+    gap: 16px;
+  }
+
+  .figure_wrapper {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .date_info {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 6px;
+  }
+
+  .date {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: $paragraphMainColor;
+  }
+
+  .parg {
+    font-size: 1.4rem;
+    margin-top: 8px;
+  }
+}

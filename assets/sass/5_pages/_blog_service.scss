@@ -1,0 +1,45 @@
+.blog_survey {
+  background-color: $secondaryColor;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 100px 0;
+  display: flex;
+  gap: 16%;
+  padding-inline-start: 6%;
+
+  .icon__ {
+    filter: brightness(0);
+  }
+  .title {
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000;
+  }
+
+  @include sm {
+    margin: 50px 0;
+  }
+
+  @include xxs {
+    gap: 10px;
+    margin: 20px 0;
+
+    .title {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.new_problem_solved {
+  .title {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 800;
+    padding-bottom: 30px;
+
+    @include xxs {
+      padding-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.problem_details_figure {
+  @include p-bottom(403, 1240);
+}
+
+.problem_details_desc {
+  .title {
+    padding-top: 40px;
+    padding-bottom: 25px;
+
+    @include sm {
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+
+    @include xxs {
+      padding-top: 15px;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.add_comment {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  @include xxs {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  @include sm {
+    padding: 30px 0;
+  }
+
+  .add_comment_text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1.4;
+
+    @include xxs {
+      width: 100%;
+      gap: 0;
+    }
+  }
+
+  .icon__ {
+    position: relative;
+    flex-shrink: 0;
+    margin-inline-end: 20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      inset-inline-end: 50%;
+      transform: translate(-50%, -50%);
+      @include circle(85px);
+      background-color: rgba($secondaryColor, 0.08);
+    }
+
+    @include sm {
+      width: 32px;
+
+      &::before {
+        @include circle(65px);
+      }
+    }
+
+    @include xxs {
+      width: 30px;
+
+      &::before {
+        @include circle(60px);
+      }
+    }
+  }
+
+  .textarea-om,
+  .button__ {
+    height: 86px;
+    margin: 0;
+
+    @include sm {
+      height: 65px;
+    }
+
+    @include xxs {
+      height: 60px;
+    }
+  }
+
+  .button__ {
+    flex: 0.5;
+
+    @include xxs {
+      flex: auto;
+      width: 60%;
+    }
+  }
+}

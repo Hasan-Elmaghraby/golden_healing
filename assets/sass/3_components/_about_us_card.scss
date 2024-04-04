@@ -1,0 +1,72 @@
+.about_us_card {
+  background-color: rgba($primaryColor, 0.02);
+  padding: 50px 25px 30px 25px;
+  position: relative;
+  width: 50%;
+  margin-bottom: 50px;
+
+  &:not(:last-child) {
+    &:after {
+      position: absolute;
+      content: "";
+      width: 60%;
+      height: 75%;
+      background-color: transparent;
+      border: 3px dashed $secondaryColor;
+
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      right: 100%;
+      z-index: -1;
+      top: 50%;
+
+      @include md {
+        height: 62%;
+        top: 60%;
+      }
+
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  .link__ {
+    position: absolute;
+    top: -38px;
+    inset-inline-start: 0;
+    @include circle(76px);
+    background-image: linear-gradient(
+      to top,
+      rgba($secondaryColor, 0.3) 0% 50%,
+      rgba($primaryColor, 0.02) 50% 100%
+    );
+  }
+
+  .title {
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .parg {
+    color: $paragraphMainColor;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  &.dir_left {
+    margin-inline-start: auto;
+
+    &::after {
+      right: -60%;
+      border-bottom-color: transparent;
+      border-right-color: #ffd500;
+      border-left-color: transparent;
+    }
+  }
+
+  @include sm {
+    width: 100%;
+  }
+}
