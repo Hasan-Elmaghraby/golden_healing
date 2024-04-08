@@ -134,6 +134,17 @@
     background-color: transparent;
     transition: 0.5s;
 
+    @include md {
+      width: 63px;
+    }
+    @include sm {
+      width: 73px;
+    }
+    @include xxs {
+      width: 44px;
+      height: 60px;
+    }
+
     &.active {
       background-color: $primaryColor;
       color: #fff;

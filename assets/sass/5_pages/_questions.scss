@@ -30,45 +30,20 @@
   gap: 60px;
   flex-wrap: wrap;
 
-  .link__ {
-    @include circle(60px);
-    min-width: 60px;
-    background-color: rgba($primaryColor, 0.06);
-    flex-shrink: 0;
-    color: $paragraphMainColor;
-    font-size: 2.5rem;
-    font-weight: 700;
-    position: relative;
-    transition: 0.5s;
+  @include md {
+    gap: 35px;
 
-    &:not(:first-child) {
-      &:before {
-        position: absolute;
-        content: "";
-        border: 1px dashed rgba(#000, 0.2);
-        top: 50%;
-        left: 100%;
-        width: 60px;
-        height: 2px;
-        z-index: -1;
-        transition: 0.5s;
-      }
-    }
-
-    &.active {
-      background-color: $secondaryColor;
-      color: #000;
-
+    .link__ {
       &:not(:first-child) {
         &:before {
-          border-color: $secondaryColor;
+          width: 35px;
         }
       }
     }
   }
 
   @include sm {
-    gap: 30px;
+    gap: 35px;
 
     .link__ {
       @include circle(35px);
@@ -77,24 +52,36 @@
 
       &:not(:first-child) {
         &:before {
-          width: 30px;
+          width: 35px;
+        }
+      }
+    }
+  }
+
+  @include xs {
+    gap: 11px;
+
+    .link__ {
+      &:not(:first-child) {
+        &:before {
+          width: 11px;
         }
       }
     }
   }
 
   @include xxs {
-    gap: 10px;
+    gap: 2px;
+    justify-content: space-around;
 
     .link__ {
-      @include circle(15px);
-      min-width: 15px;
+      @include circle(26px);
+      min-width: 25px;
       font-size: 1.2rem;
 
       &:not(:first-child) {
         &:before {
-          width: 10px;
-          height: 1px;
+          display: none;
         }
       }
     }

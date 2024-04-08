@@ -22,6 +22,10 @@
   border-radius: 20px;
   padding: 30px 50px;
   position: relative;
+
+  @include xs {
+    padding: 10px;
+  }
 }
 
 .forget_password_link {
@@ -45,11 +49,20 @@
   font-size: 1.6rem;
   font-weight: 300;
   margin-bottom: 40px;
+  line-height: 25px;
 
-  // .phone_number {
-  //   color: $thirdColor;
-  //   font-weight: 400;
-  // }
+  @include sm {
+    margin-bottom: 20px;
+  }
+
+  @include xxs {
+    margin-bottom: 10px;
+  }
+
+  .phone_number {
+    color: $thirdColor;
+    font-weight: 400;
+  }
 }
 
 .figure_password {

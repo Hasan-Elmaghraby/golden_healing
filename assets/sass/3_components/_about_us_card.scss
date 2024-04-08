@@ -31,18 +31,6 @@
     }
   }
 
-  .link__ {
-    position: absolute;
-    top: -38px;
-    inset-inline-start: 0;
-    @include circle(76px);
-    background-image: linear-gradient(
-      to top,
-      rgba($secondaryColor, 0.3) 0% 50%,
-      rgba($primaryColor, 0.02) 50% 100%
-    );
-  }
-
   .title {
     color: #000;
     font-size: 1.8rem;

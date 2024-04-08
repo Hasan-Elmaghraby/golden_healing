@@ -87,23 +87,6 @@
     }
   }
 
-  .read_more {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    gap: 10px;
-    height: 52px;
-    color: $thirdColor;
-    padding: 0 15px;
-    font-size: 1.6rem;
-    font-weight: 700;
-    background: transparent;
-    border: 1px solid $thirdColor;
-    border-radius: 10px;
-    min-width: 175px;
-  }
-
   &:hover {
     transform: translateY(-10px);
     background-color: $secondaryColor;

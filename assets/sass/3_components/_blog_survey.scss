@@ -30,16 +30,3 @@
     }
   }
 }
-
-.new_problem_solved {
-  .title {
-    font-size: 2rem;
-    color: #000;
-    font-weight: 800;
-    padding-bottom: 30px;
-
-    @include xxs {
-      padding-bottom: 15px;
-    }
-  }
-}

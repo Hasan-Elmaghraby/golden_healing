@@ -21,7 +21,7 @@
 
   &:focus,
   &:hover {
-    border-color: $primaryColor;
+    border: 1px solid $primaryColor;
   }
 
   &::-webkit-outer-spin-button,

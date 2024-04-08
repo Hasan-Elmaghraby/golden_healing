@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="assets/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/swiper.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
 </head>
 
 <body>
@@ -114,27 +114,25 @@
 
           <div class="col-lg-8">
 
-            <div class="form_wrapper__">
+            <form class="form_wrapper__">
 
               <h3 class="title_form">إتصل بنا</h3>
               <h3 class="subtitle_form"> نحن فى إنتظار إستفساراتكم على مدار 24 ساعة</h3>
 
-              <div class="input_group_unit__"><input class="input__" type="text" placeholder="الاسم الأول">
-                <input class="input__" type="text" placeholder="الاسم الثاني ">
+              <div class="input_group_unit__"><input class="input__" type="text" placeholder="الاسم الأول" required>
+                <input class="input__" type="text" placeholder="الاسم الثاني " required>
               </div>
 
-              <div class="input_group_unit__"><input class="input__" type="number" placeholder="رقم الجوال ">
-                <input class="input__" type="email" placeholder="البريد الإلكترونى ">
+              <div class="input_group_unit__"><input class="input__" type="number" placeholder="رقم الجوال " required>
+                <input class="input__" type="email" placeholder="البريد الإلكترونى " required>
               </div>
 
-              <textarea class="input__ textarea-om modify_height" placeholder="نص الرسالة"></textarea>
+              <textarea class="input__ textarea-om modify_height" placeholder="نص الرسالة" required></textarea>
 
               <input class="button__ submit-button__   margin_top " type="submit" value="إرسال">
 
 
-            </div>
-
-
+            </form>
 
           </div>
 
@@ -284,12 +282,10 @@
   <!-- End Footer Section -->
 
   <!-- start js include  -->
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
   <script src="assets/js/jquery-3.3.1.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/bootstrap-select.min.js"></script>
-  <script src="assets/js/mixitup.min.js"></script>
   <script src="assets/js/swiper.min.js"></script>
   <script src="assets/js/plugin.js"></script>
 

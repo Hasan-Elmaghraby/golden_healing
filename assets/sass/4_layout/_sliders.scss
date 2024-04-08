@@ -136,11 +136,11 @@
   justify-content: start;
   z-index: 3;
   gap: 0px;
-  bottom: 22% !important;
+  bottom: 15% !important;
   padding-inline-start: 20px;
 
   @include md {
-    bottom: 13% !important;
+    bottom: 6% !important;
   }
   @include sm {
     justify-content: center;

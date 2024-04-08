@@ -10,6 +10,21 @@
   padding-bottom: 2px;
   inset-inline-start: 10px;
 
+  &.title_new_problem_solved {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 800;
+    padding-bottom: 30px;
+
+    &::before {
+      display: none;
+    }
+
+    @include xxs {
+      padding-bottom: 15px;
+    }
+  }
+
   // @include xs {
   //   font-size: 1.8rem;
   // }
