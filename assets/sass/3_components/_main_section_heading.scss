@@ -25,9 +25,25 @@
     }
   }
 
-  // @include xs {
-  //   font-size: 1.8rem;
-  // }
+  &.problem_details_title {
+    font-size: 1.6rem;
+    padding-top: 40px;
+    padding-bottom: 25px;
+
+    @include sm {
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+
+    @include xxs {
+      padding-top: 15px;
+      padding-bottom: 5px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
 
   &::before {
     content: "";

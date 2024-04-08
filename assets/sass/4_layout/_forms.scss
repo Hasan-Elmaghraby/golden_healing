@@ -588,10 +588,30 @@
 }
 
 .share_survey_wrapper {
-  .modify_margin {
-    margin-inline-start: -15%;
+  display: flex;
+  padding-inline-end: 15px;
 
-    @include sm {
+  .form_wrapper__ {
+    width: 100%;
+  }
+
+  .figure_share_survey {
+    width: 400px;
+  }
+
+  @include lg {
+    .form_wrapper__ {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-inline-end: 10%;
+    }
+  }
+
+  @include sm {
+    padding-inline-end: 15px;
+    padding-inline-start: 15px;
+
+    .figure_share_survey {
       display: none;
     }
   }

@@ -11,7 +11,7 @@
   .title {
     font-size: 2rem;
     font-weight: 800;
-    color: #000;
+    color: $blackColor;
     margin-bottom: 15px;
   }
 
@@ -104,7 +104,7 @@
   .title {
     font-size: 1.6rem;
     font-weight: 400;
-    color: #000;
+    color: $blackColor;
     padding-bottom: 15px;
   }
 }
@@ -113,26 +113,6 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-
-  .button__ {
-    font-size: 1.6rem;
-    color: $thirdColor;
-    font-weight: 700;
-  }
-
-  .finish_button {
-    width: 190px;
-    background-color: rgba(#ff0000, 0.13);
-
-    &:hover {
-      background-color: rgba(#ff0000, 0.2);
-    }
-  }
-
-  .share_button {
-    width: 267px;
-    background-color: $secondaryColor;
-  }
 }
 
 .problem_share {

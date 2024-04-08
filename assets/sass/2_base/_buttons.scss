@@ -189,6 +189,26 @@
   &.assign_width {
     width: 180px;
   }
+
+  &.finish_button {
+    font-size: 1.6rem;
+    color: $thirdColor;
+    font-weight: 700;
+    width: 190px;
+    background-color: rgba(#ff0000, 0.13);
+
+    &:hover {
+      background-color: rgba(#ff0000, 0.2);
+    }
+  }
+
+  &.share_button {
+    font-size: 1.6rem;
+    color: $thirdColor;
+    font-weight: 700;
+    width: 267px;
+    background-color: $secondaryColor;
+  }
 }
 
 .read_more {
@@ -206,4 +226,10 @@
   border: 1px solid $thirdColor;
   border-radius: 10px;
   min-width: 175px;
+
+  .icon__ {
+    @include dir {
+      transform: rotate(180deg);
+    }
+  }
 }

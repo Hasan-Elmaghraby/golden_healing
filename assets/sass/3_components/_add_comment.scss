@@ -1,24 +1,3 @@
-.problem_details_figure {
-  @include p-bottom(403, 1240);
-}
-
-.problem_details_desc {
-  .title {
-    padding-top: 40px;
-    padding-bottom: 25px;
-
-    @include sm {
-      padding-top: 20px;
-      padding-bottom: 10px;
-    }
-
-    @include xxs {
-      padding-top: 15px;
-      padding-bottom: 5px;
-    }
-  }
-}
-
 .add_comment {
   display: flex;
   gap: 20px;

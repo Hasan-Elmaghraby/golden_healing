@@ -35,6 +35,9 @@
 @import "3_components/blog_card";
 @import "3_components/comment_card";
 @import "3_components/blog_survey";
+@import "3_components/add_comment";
+@import "3_components/pay_details";
+@import "3_components/questions";
 
 // 4_layout
 @import "4_layout/header";
@@ -47,6 +50,3 @@
 @import "5_pages/registerration_pages";
 
 @import "5_pages/home";
-@import "5_pages/pay_details";
-@import "5_pages/questions";
-@import "5_pages/problem_details";
