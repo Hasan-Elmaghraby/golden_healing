@@ -4181,6 +4181,11 @@ html[dir=ltr] .select__ .dropdown-toggle .filter-option {
     display: block;
   }
 }
+.input_group_unit__ .input_unit {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
 .input_group_unit__ .unit__ {
   min-width: 67px;
   height: 56px;
@@ -4585,6 +4590,15 @@ html[dir=ltr] .password-group-om .show-password-button-om {
 .figure_survey {
   max-width: 364px;
   padding-bottom: 203.7931034483%;
+}
+
+.parg_validation {
+  display: none;
+}
+.parg_validation p {
+  color: red;
+  font-size: 1.4rem;
+  text-align: start;
 }
 
 .swiper.paddingTop {

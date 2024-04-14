@@ -185,6 +185,10 @@
     display: block;
   }
 
+  .input_unit {
+    flex-grow: 1;
+  }
+
   // .input__ {
   //   border-radius: 0 $mainBorderRadius $mainBorderRadius 0;
 
@@ -620,4 +624,13 @@
 .figure_survey {
   max-width: 364px;
   @include p-bottom(591, 290);
+}
+
+.parg_validation {
+  display: none;
+  p {
+    color: red;
+    font-size: 1.4rem;
+    text-align: start;
+  }
 }
