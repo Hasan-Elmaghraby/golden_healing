@@ -838,6 +838,10 @@ html[dir=ltr] .close-button__ {
   top: 10vh;
   overflow: unset !important;
 }
+.modal.show .modal-dialog {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
 .modal .modal-content {
   padding: 30px 45px;
   border-radius: 10px;
@@ -866,13 +870,14 @@ html[dir=ltr] .close-button__ {
   opacity: 0.78 !important;
 }
 
-.modal-open .container-fluid, .modal-open .container {
+.modal-open .container-fluid,
+.modal-open .container {
   -webkit-filter: blur(5px) grayscale(60%);
           filter: blur(5px) grayscale(60%);
 }
 
 .modal-dialog {
-  max-width: 348px;
+  max-width: 400px;
   margin: 0 auto;
 }
 .modal-dialog.small_fixed_width {
@@ -1925,7 +1930,6 @@ html[dir=ltr] .site_link .icon__ {
 
 .popup_service {
   padding: 55px 80px;
-  position: fixed;
   background-color: #fff;
   min-width: 400px;
   text-align: center;
@@ -5477,6 +5481,10 @@ html[dir=ltr] .rotate_arrow_en {
   border-radius: 10px;
   z-index: 4;
   overflow: hidden;
+}
+html[dir=ltr] .about_us_figure_wrapper .small_figure {
+  inset-inline-end: -30px;
+  inset-inline-start: auto;
 }
 @media only screen and (max-width: 1199px) {
   .about_us_figure_wrapper .small_figure {

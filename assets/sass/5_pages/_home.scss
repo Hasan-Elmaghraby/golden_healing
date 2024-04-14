@@ -156,6 +156,10 @@
     position: absolute;
     top: 5%;
     inset-inline-start: -30px;
+    @include dir {
+      inset-inline-end: -30px;
+      inset-inline-start: auto;
+    }
     width: 50%;
     border-radius: 10px;
     z-index: 4;

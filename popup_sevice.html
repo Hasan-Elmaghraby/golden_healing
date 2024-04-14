@@ -104,7 +104,6 @@
   <!-- End Header Section -->
 
 
-
   <!-- Start  About us -->
 
   <section class="about_us default_page__">
@@ -164,19 +163,34 @@
 
 
   <!-- start popup Service -->
-  <div class="popup_service">
-    <figure class="icon__"><img src="assets/images/shapes/services/money.png" alt=""></figure>
+  <!-- //////modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#service_paying">
+    Launch demo modal
+  </button>
 
-    <h3 class="title">يجب عليك تسديد مبلغ الخدمة</h3>
-    <h5 class="subtitle">من فضلك قم بسداد مبلغ الخدمة لكى تستطيع حل مشكلتك</h5>
-    <button class="button__ pay_button">دفع</button>
-    <button class="button__ close_button">
-      <figure class="figure__ icon__"><img src="assets/images/shapes/services/close.png" alt="">
-      </figure>إغلاق
-    </button>
 
+  <div class="modal fade" id="service_paying" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content popup_service">
+
+        <figure class="icon__"><img src="assets/images/shapes/services/money.png" alt=""></figure>
+        <h3 class="title">يجب عليك تسديد مبلغ الخدمة</h3>
+        <h5 class="subtitle">من فضلك قم بسداد مبلغ الخدمة لكى تستطيع حل مشكلتك</h5>
+        <button class="button__ pay_button">دفع</button>
+        <button class="button__ close_button" data-dismiss="modal">
+          <figure class="figure__ icon__"><img src="assets/images/shapes/services/close.png" alt="">
+          </figure>إغلاق
+        </button>
+
+      </div>
+
+
+
+    </div>
   </div>
   <!-- End popup Service -->
+
 
 
   <!-- Start Footer Contacts -->

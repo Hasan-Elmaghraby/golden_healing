@@ -2,6 +2,12 @@
   top: 10vh;
   overflow: unset !important;
 
+  &.show {
+    .modal-dialog {
+      transform: translateY(50%);
+    }
+  }
+
   .modal-content {
     padding: 30px 45px;
     border-radius: $mainBorderRadius;
@@ -14,7 +20,6 @@
     position: absolute;
     top: 30px;
     inset-inline-end: 25px;
-
 
     .icon__ {
       max-width: 35px;
@@ -34,29 +39,30 @@
   opacity: 0.78 !important;
 }
 
-.modal-open .container-fluid, .modal-open  .container {
+.modal-open .container-fluid,
+.modal-open .container {
   filter: blur(5px) grayscale(60%);
 }
 
 .modal-dialog {
-  max-width: 348px;
+  max-width: 400px;
   margin: 0 auto;
-  
+
   &.small_fixed_width {
     max-width: 330px;
   }
-  
+
   &.add_address_modal {
     max-width: 644px;
   }
 
   &.large_width__ {
-      max-width: 70%;
+    max-width: 70%;
   }
 }
 
 .modal_block__ {
-  >.figure__ {
+  > .figure__ {
     margin-bottom: 15px;
   }
 
