@@ -185,7 +185,12 @@
     &:hover {
       background-color: rgba($secondaryColor, 0.8);
     }
+
+    @include xxs {
+      height: 48px;
+    }
   }
+
   &.assign_width {
     width: 180px;
   }

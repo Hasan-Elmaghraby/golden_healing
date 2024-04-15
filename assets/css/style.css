@@ -520,6 +520,11 @@ html[dir=ltr] .link__.main_link .figure__ {
 .button__.main_button:hover {
   background-color: rgba(255, 213, 0, 0.8);
 }
+@media only screen and (max-width: 500px) {
+  .button__.main_button {
+    height: 48px;
+  }
+}
 .button__.assign_width {
   width: 180px;
 }
@@ -666,6 +671,9 @@ html[dir=ltr] .read_more .icon__ {
 }
 .figure__.problem_details_figure {
   padding-bottom: 32.5%;
+}
+.figure__.problem_share {
+  padding-bottom: 74.0384615385%;
 }
 
 .asp-om {
@@ -1419,9 +1427,9 @@ html[dir=ltr] .site_link .icon__ {
           justify-content: center;
   gap: 8px;
   text-decoration: none;
-  color: #17355a;
+  color: #000;
   background-color: transparent;
-  border: 1px solid #17355a;
+  border: 1px solid #000;
   cursor: pointer;
   border-radius: 10px;
   padding: 10px 30px;
@@ -2377,10 +2385,6 @@ html[dir=ltr] .site_link .icon__ {
   gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.problem_share {
-  padding-bottom: 74.0384615385%;
 }
 
 .dropdown__ {
@@ -3351,6 +3355,8 @@ html[dir=ltr] .toolbar_options__ .block__.log_out_item__ .icon__ {
   font-size: 1.8rem;
   color: #121212;
   font-weight: 700;
+  display: block;
+  direction: ltr;
 }
 .footer-contact-wrapper .figure-block {
   position: relative;
@@ -4052,6 +4058,8 @@ html[dir=ltr] .select__ .dropdown-toggle .filter-option {
 .subtitle_form .phone_number {
   color: #393636;
   font-weight: 400;
+  display: block;
+  direction: ltr;
 }
 
 .figure_password {

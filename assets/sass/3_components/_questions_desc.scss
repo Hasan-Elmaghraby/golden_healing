@@ -1,0 +1,26 @@
+.qustions_desc {
+  width: 70%;
+
+  @include sm {
+    margin: 0 auto;
+  }
+
+  @include xxs {
+    width: 80%;
+  }
+  .title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: $headingThirdColor;
+    margin-bottom: 15px;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $paragraphMainColor;
+    margin-bottom: 15px;
+    line-height: 33px;
+    margin-bottom: 40px;
+  }
+}

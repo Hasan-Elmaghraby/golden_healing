@@ -18,6 +18,10 @@
   &.problem_details_figure {
     @include p-bottom(403, 1240);
   }
+
+  &.problem_share {
+    @include p-bottom(385, 520);
+  }
 }
 
 // img-flex-asp-om
